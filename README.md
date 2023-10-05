@@ -1,6 +1,7 @@
 # Data Bench
 One data tool as a standard to organize triage, cleaning and modeling of my data projects on GitHub
 * Just as you have one toolbox for plumbing and another for electrical
+* Version 0.1.9 - This is a prototype some features are broken
 
 
 # Ghantt Project Planning
