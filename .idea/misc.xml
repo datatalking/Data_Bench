@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (Data_Bench)" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="enabledOnReformat" value="true" />
+    <option name="enabledOnSave" value="true" />
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="$USER_HOME$/opt/anaconda3/bin/black" />
+    <option name="sdkUUID" value="db3ab811-ab83-4b3c-92fa-22faa5dd3a0d" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (Data_Bench)" project-jdk-type="Python SDK" />
 </project>

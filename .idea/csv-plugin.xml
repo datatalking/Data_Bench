@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="/World_Bank/World_Development_Indicators/4.16_Exchange_rates_and_prices_.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/World_Bank/World_Development_Indicators/708d79bb-92e0-40a3-84f5-345eba9bfe83_Country - Metadata.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/World_Bank/World_Development_Indicators/708d79bb-92e0-40a3-84f5-345eba9bfe83_Data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/World_Bank/World_Development_Indicators/708d79bb-92e0-40a3-84f5-345eba9bfe83_Series - Metadata.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/World_Bank/World_Development_Indicators/a49401f5-e324-4d3c-93ff-e5d3d791bbcd_Series - Metadata.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

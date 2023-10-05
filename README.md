@@ -1,12 +1,14 @@
 # Data Bench
-One Standard Repo to unify your data projects on GitHub
+One data tool as a standard to organize triage, cleaning and modeling of my data projects on GitHub
+* Just as you have one toolbox for plumbing and another for electrical
 
-# Data Science Project Planning
-- I chose Critical Chain for its ease of use
+
+# Ghantt Project Planning
+- I chose Critical Chain for its ease of use, start with the end in mind
   - Supplemental Reading: https://www.simplilearn.com/what-is-critical-chain-project-management-rar68-article
   - Good Explanation: https://www.knowledgehut.com/tutorials/project-management/critical-chain-method
 - `README.md` markdown documents can be your friend as they are multifaceted tools
-  - Markdown code allows me to take this
+  - Markdown code allows me to take raw data like this
 ```
     gantt
     title A Gantt Diagram
@@ -25,7 +27,7 @@ One Standard Repo to unify your data projects on GitHub
     API data triage                     :after c1  , 14d
     section Implement
     Upskill Team Members on GitHub      :e1, 2021-10-17, 28d
-    Define and adapt critical path                :after a1  , 49d
+    Define and adapt critical path      :after a1  , 49d
     section Implement
     BiWeek Scrum Review               :f1, 2021-10-17, 35d
     Trial Run 1                        :after e1  , 7d
@@ -47,37 +49,68 @@ One Standard Repo to unify your data projects on GitHub
     Final Run 3                       :after i1  , 7d
 
 ``` 
-
-- Now load Mermaid, click here for a tutorial http://mermaid-js.github.io/mermaid/#/n00b-gettingStarted
+- Then we can use Mermaid to autogenerate a ghantt chart
+- Next step is load Mermaid, click here for a tutorial http://mermaid-js.github.io/mermaid/#/n00b-gettingStarted
 - I'm partial to Mermaid see below for the Gantt chart was created from the code above
 
 [![](https://mermaid.ink/img/pako:eNqNlclu2zAQhl9loENPdizSjhfd0qpJczBgJC6KAr5Q1EgiIlECSSVIA797qaWSY1t2CR_kIefnNwsxHw7PQ3Q8J2bSmJ0Eu4wwKcIdPFQm8AWLFcuarZAZvM9VxgzAb7vG6_XY95s9jdyIXMKjFEawFDYJ09hsbfNCcHjGtD1ybnmMjIC6lIzd1ZisRrAIG-fnUhgWiBQnG8WsP7fap86RQQWMAPSOHVBWpJihNIcwVRRlygZwvOAAhs57TR-DMo6FjCffUmTSfsAQTHAWZovaTGoVl7Tx8bxA8HNeVoxwPjn8Hw9xx-70ODm2XK8ahtLT8vBrPLTZuds8AuMctQaeMBmjPsdDex7i9rKVs20SBkbZvsGBSh_wkNnlav0s9ItIU8vJMlhjFqDSYI89CPOjDFpBPMgOWdjvZVeuSEgEJkNgISsMcCWaFBXMJBe7aLa6DPZV_EJ8sdVTZQZP-Crw7VguOsKa3raSW1U9kKdSAoGB1bLg_3T0fSlru9XcNmknJyhdvexv1ituFGqr07wDX73XUJdQunr1MdArMUT0XAy-srtV27cxCIsv_tiHgFrEcgS-7aJRF5qua_hmq4dgbMvqgTRTG9uMniBOryDGZ9NcVVVjeAB5kujj2L2Y9Imm5KIm0CHVY1wvOVRdnqrW2es5-8Bnl-NOPsV9CnLs7okOhI7d2971CXmuQvjSxjd8o_h8Y819qUJn3ZyRk6GdQiK0k-ujsu0ck9gXsXM8-xlixMrU7Jyd3NujrDT587vkjmdUiSOnLKox1s41x4tYqjvr91CYXHXGNGch2r8fjnkv6jEptLGSPJeRiCt7qVJrTowptDeZVNs3sTBJGdzwPJtoESZMmeR1NZ_M6XzJ6BTniym7nU5DHpDVMqIzEoULl1Dm7PcjB-v7181Mrkfz_i8yxwvO?type=png)](https://mermaid.live/edit#pako:eNqNlclu2zAQhl9loENPdizSjhfd0qpJczBgJC6KAr5Q1EgiIlECSSVIA797qaWSY1t2CR_kIefnNwsxHw7PQ3Q8J2bSmJ0Eu4wwKcIdPFQm8AWLFcuarZAZvM9VxgzAb7vG6_XY95s9jdyIXMKjFEawFDYJ09hsbfNCcHjGtD1ybnmMjIC6lIzd1ZisRrAIG-fnUhgWiBQnG8WsP7fap86RQQWMAPSOHVBWpJihNIcwVRRlygZwvOAAhs57TR-DMo6FjCffUmTSfsAQTHAWZovaTGoVl7Tx8bxA8HNeVoxwPjn8Hw9xx-70ODm2XK8ahtLT8vBrPLTZuds8AuMctQaeMBmjPsdDex7i9rKVs20SBkbZvsGBSh_wkNnlav0s9ItIU8vJMlhjFqDSYI89CPOjDFpBPMgOWdjvZVeuSEgEJkNgISsMcCWaFBXMJBe7aLa6DPZV_EJ8sdVTZQZP-Crw7VguOsKa3raSW1U9kKdSAoGB1bLg_3T0fSlru9XcNmknJyhdvexv1ituFGqr07wDX73XUJdQunr1MdArMUT0XAy-srtV27cxCIsv_tiHgFrEcgS-7aJRF5qua_hmq4dgbMvqgTRTG9uMniBOryDGZ9NcVVVjeAB5kujj2L2Y9Imm5KIm0CHVY1wvOVRdnqrW2es5-8Bnl-NOPsV9CnLs7okOhI7d2971CXmuQvjSxjd8o_h8Y819qUJn3ZyRk6GdQiK0k-ujsu0ck9gXsXM8-xlixMrU7Jyd3NujrDT587vkjmdUiSOnLKox1s41x4tYqjvr91CYXHXGNGch2r8fjnkv6jEptLGSPJeRiCt7qVJrTowptDeZVNs3sTBJGdzwPJtoESZMmeR1NZ_M6XzJ6BTniym7nU5DHpDVMqIzEoULl1Dm7PcjB-v7181Mrkfz_i8yxwvO)
 
-- While this is not perfect its a great way to align Critical Chain Project Management to Data Science projects
-- Mermaid can do many things
-- Future Feature is to have Mermaid pull flowchart function from my python code.
+- While this is not perfect it is a good start to align Critical Chain Project Management to Data Science project 
+  coding and organization
+
+
+# Critical Chain Providers
+Provider,type,usage,pro,con
+1. Local, Hosting, testing/learning
+2. Github, Hosting, code link, free, no dymanic
+3. Heroku, Hosting, starter, cheap simple, not huge demand/unknown
+4. AWS, Hosting
+5. Google Cloud, Hosting - future
+6. Tableau visuals - future
+7. PowerBI - future
+8. QLI - future
+9. Salesforce - future
 
 
 # Errata
 - Any sufficently useful code will create errors
 - Creating a bug database
+  - DebugDB.py will be a database in sqlite using
 
 
 # Requirements
-- Python 3.7
+![Requirements.txt](https://github.com/datatalking/Data_Bench/requirements.txt)
 
 
-# Installation
-- git clone `repo name` and press enter in your terminal of choice
+# Installation - Pycharm
+- git clone `Data_Bench` and press enter in your terminal of choice
+- add 'pyproject.toml' to access your black connect settings
+- you will need to add your .env variables as needed
+- update 'streamlit_dashboard.py' file as needed
+
 
 # Features
+* /data is a central data folder for testing ML and NLP models
+* /output will recieve output of ML and NLP model outputs
+* /test will contain the generated tests for each model
+* /future will contain features in dev for upgrades and updates as needed
+* /src contains files when we publish this to pypi
 
 
 # Future Features
+* Automated dashboard for csv, tsv, par
+* Automated dashboard for SQL
+* Semi automated vector database
+* Active database monitoring for testing
+* Database DDL, DCL and DML schema monitoring option
+* Auto abstraction of user name or passwords in code to .env file
+* Future Feature is to have Mermaid pull flowchart function from my python code description string :param:
+* Data Bench will have storage for ML, NLP, Ai toolboxes
+* Data Bench will detect compatible filetypes and have a place to stream data vs downloading it
+* Data Bench will remember your past projects and suggest models or compatibility issues
 
 
 # LICENSE
-
 The [Commons Clause](https://commonsclause.com) is a License Condition drafted by Heather Meeker and contributed by [FOSSA](https://fossa.io).
 
 ```plaintext
@@ -91,13 +124,11 @@ For purposes of the foregoing, “Sell” means practicing any or all of the rig
 
 Software: [Data_Bench]
 License: [i.e. Apache 2.0]
-Licensor: [Data Talking]
+Licensor: [datatalking]
 ```
 
 ## About
-
 Read about the Commons Clause and its purpose on the public [FAQ](https://commonsclause.com/#faq)
 
 ## License
-
 This repository is under the [Public Domain](https://creativecommons.org/publicdomain/zero/1.0/legalcode).

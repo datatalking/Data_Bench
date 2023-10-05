@@ -1,0 +1,59 @@
+
+ID,1203
+Project,Bee Flogger 2.0
+Area,FTP Client
+Title,Uploading file causes FTP server to dump core
+Assigned To,CLOSED
+Status,CLOSED (RESOLVED – FIXED)
+Priority,2 – Must Fix
+Fix For,2.0 Alpha
+Version,Build 2019
+Computer,Jill’s iMac, Mac OS 9.0, 128M RAM, 1024×768 millions of colors
+Description,11/1/2000 Opened by Jill the Very, Very Good Tester
+* Start Bee Flogger
+* Create an unnamed document simply containing the letter “a”
+* Click on the FTP button on the toolbar
+* Try to ftp to your server
+
+BUG: Observe; the ftp server is no longer responding. Indeed ps -augx shows that it is not even running and there is a core dump in /.
+
+EXPECTED: No crash
+
+11/1/2000 Assigned to Willie the Lead Developer by Jill the Very, Very Good Tester
+
+11/2/2000 (Yesterday) RESOLVED – WON’T FIX by Willie the Lead Developer
+
+Not our code, Jill, that’s just proftpd which comes with Linux.
+
+11/2/2000 (Yesterday) Reactivated (assigned to Willie the Lead Developer) by Jill the Very, Very Good Tester
+
+That doesn’t sound right. I’ve never been able to crash proftpd when I connect with a normal ftp client. Our code crashes it every single time. Ftp servers don’t just “crash”.
+
+11/3/2000 (Today) Assigned to Mikey the Programmer by Willie the Lead Developer
+
+Mikey, can you look at this? Maybe your client code is doing something wrong.
+
+11/3/2000 (Today) RESOLVED – FIXED by Mikey the Programmer
+
+I think I was passing the user name instead of the password or something…
+
+11/3/2000 (Today) Reactivated (assigned to Mikey the Programmer) by Jill the Very, Very Good Tester
+
+Still happens in Build 2021.
+
+11/3/2000 (Today) Edited by Mikey the Programmer
+
+Whoa. That’s strange. Lemme debug this.
+
+11/3/2000 (Today) Edited by Mikey the Programmer
+
+I’m thinking it might be MikeyStrCpy()…
+
+11/3/2000 (Today) RESOLVED – FIXED by Mikey the Programmer
+
+Ahhh!
+FIXED!
+
+11/3/2000 (Today) Closed by Jill the Very, Very Good Tester
+
+Appears fixed in build 2022, so I’ll go ahead and close this.

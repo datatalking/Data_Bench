@@ -1,0 +1,7 @@
+*.*sv
+*.t*xt
+*.par*
+*ata*/*
+future/*
+*.gitignore
+*.env
